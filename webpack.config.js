@@ -153,10 +153,10 @@ const config = {
     alias: {
       react: path.resolve('./node_modules/react'), // why do so? see this issue(https://github.com/facebook/react/issues/15812) and comment
       'react-dom': '@hot-loader/react-dom',
-      '~images': path.resolve(__dirname, './src/images'),
-      '~pages': path.resolve(__dirname, './src/pages'),
-      '~components': path.resolve(__dirname, './src/components'),
-      '~hooks': path.resolve(__dirname, './src/hooks'),
+      'images': path.resolve(__dirname, './src/images'),
+      'pages': path.resolve(__dirname, './src/pages'),
+      'components': path.resolve(__dirname, './src/components'),
+      'hooks': path.resolve(__dirname, './src/hooks'),
     },
   },
   plugins,
