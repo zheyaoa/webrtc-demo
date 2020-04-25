@@ -1,15 +1,17 @@
 import React, { FC } from 'react';
+import './style.less'
 
 interface Props {}
-const Index: FC<Props> = () => {
+const Home: FC<Props> = () => {
 
   return (
-    <>
-      <div>Home Page</div>
-      <div>This is Home page</div>
-    </>
+    <div className='home'>
+      <div className='box'>
+        abc
+      </div>
+    </div>
   );
 };
 
 
-export default Index;
+export default Home;

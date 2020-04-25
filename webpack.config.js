@@ -69,6 +69,7 @@ const config = {
     historyApiFallback: true,
     open: true,
     hot: true,
+    port: 9000,
     publicPath,
     quiet: true,
     compress: true,
@@ -104,7 +105,7 @@ const config = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.less|css$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -120,9 +121,9 @@ const config = {
             },
           },
           {
-            loader: 'sass-loader',
+            loader: 'less-loader',
             options: {
-              implementation: require('sass'),
+              implementation: require('less'),
               sassOptions: {
                 includePaths: ['./node_modules'],
               },
